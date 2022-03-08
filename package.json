@@ -1,0 +1,23 @@
+{
+  "name": "rajjan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass --watch scss/main.scss:css/main.css --style compressed"
+  },
+  "author": "Md Ishaq Ibrahim",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammad-Ishaq98/rajjna.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mohammad-Ishaq98/rajjna/issues"
+  },
+  "homepage": "https://github.com/Mohammad-Ishaq98/rajjna#readme",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
