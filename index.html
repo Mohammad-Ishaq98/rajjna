@@ -8,14 +8,8 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- CSS here -->
-      <link rel="stylesheet" href="css/preloader.css">
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/meanmenu.css">
-      <link rel="stylesheet" href="css/animate.min.css">
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/swiper-bundle.css">
-      <link rel="stylesheet" href="css/backToTop.css">
-      <link rel="stylesheet" href="css/magnific-popup.css">
       <link rel="stylesheet" href="css/main.css">
    </head>
    <body>
@@ -171,8 +165,8 @@
                <div class="col-lg-5">
                   <div class="details_txt">
                      <h2>Bangladeshi 3 pieces</h2>
-                     <h6 class="product_name">Product Name</h6>
-                     <span class="price">Price: 200 &#2547;</span>
+                     <h6 id="product_name">Product Name</h6>
+                     <span id="price">Price: 200 &#2547;</span>
                      <p>Dummy Texts: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in fugit ducimus consequuntur ut, magnam nam officiis possimus perferendis rem delectus rerum id, ea nulla corporis nobis magni? Exercitationem, corrupti.</p>
                      <button class="buy_cart btn btn-outline-primary">Buy Now</button>
                   </div>
@@ -211,11 +205,11 @@
                <div class="col-lg-1">
                  <label for="" class="form-label">SL</label>
                </div>
-               <div class="col-lg-5">
+               <div class="col-lg-4">
                   <label for="" class="form-label">Product name</label>
                 </div>
-                <div class="col-lg-2">
-                  <label for="" class="form-label">Unit</label>
+                <div class="col-lg-3">
+                  <label for="" class="form-label">Quantity</label>
                 </div>
                 <div class="col-lg-2">
                   <label for="" class="form-label">Unit Price</label>
@@ -224,26 +218,79 @@
                   <label for="" class="form-label">Total</label>
                 </div>
 
-                <div class="row">
-                  <div class="col-lg-1">
-                     <input for="" class="form-control disable_input" disabled></>
+                <div class="cart-item">
+                  <div class="row cart-row">
+                     <div class="col-lg-12">
+                        <div class="cart_list">
+                           <div class="row">
+                              <div class="col-lg-1">
+                                 <div class="serial_no">
+                                    #1
+                                 </div>
+                              </div>
+                              <div class="col-lg-4">
+                                 <div class="product_name_input">
+                                    <h4>bangladeshi 3 piece</h4>
+                                 </div>
+                              </div>
+                              <div class="col-lg-3">
+                                 <div class="quantity_input">
+                                    <!-- <label for="" class="form-lable">1 pc/pcs</label> -->
+                                    <input type="number" class="form-control quantity_num" >
+                                 </div>
+                              </div>
+                              <div class="col-lg-2">
+                                 <div class="cart_price">
+                                    <label for="" class="form-lable">22$</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <button type="button" class="btn btn-danger">Remove</button>
+                        </div>
+                     </div>
                    </div>
-                   <div class="col-lg-5">
-                      <input for="" class="form-control disable_input"></>
-                    </div>
-                    <div class="col-lg-2">
-                      <input for="" class="form-control disable_input"></>
-                    </div>
-                    <div class="col-lg-2">
-                      <input for="" class="form-control disable_input"></>
-                    </div>
-                    <div class="col-lg-2">
-                      <input for="" class="form-control disable_input"></>
-                    </div>
+                   <div class="row cart-row">
+                     <div class="col-lg-12">
+                        <div class="cart_list">
+                           <div class="row">
+                              <div class="col-lg-1">
+                                 <div class="serial_no">
+                                    #1
+                                 </div>
+                              </div>
+                              <div class="col-lg-4">
+                                 <div class="product_name_input">
+                                    <h4>hello</h4>
+                                 </div>
+                              </div>
+                              <div class="col-lg-3">
+                                 <div class="quantity_input">
+                                    <!-- <label for="" class="form-lable">1 pc/pcs</label> -->
+                                    <input type="number" class="form-control quantity_num" >
+                                 </div>
+                              </div>
+                              <div class="col-lg-2">
+                                 <div class="cart_price">
+                                    <label for="" class="form-lable">22$</label>
+                                 </div>
+                              </div>
+                              <div class="col-lg-2">
+                                 <div class="cart_total">
+                                    <label for="" class=""></label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                   </div>
                 </div>
             </div>
          </div>
       </form>
+      <div class="quantity_input">
+         <!-- <label for="" class="form-lable">1 pc/pcs</label> -->
+         <input type="number" class="form-control quantity_num" >
+      </div>
       <!-- cart/form end-->
       <!-- header end -->
       <!-- JS here -->
@@ -251,14 +298,6 @@
       <script src="js/vendor/jquery-1.12.4.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/jquery.meanmenu.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/magnific-popup.min.js"></script>
-      <script src="js/parallax.min.js"></script>
-      <script src="js/backToTop.js"></script>
-      <script src="js/counterup.min.js"></script>
-      <script src="js/wow.min.js"></script>
-      <script src="js/isotope.pkgd.min.js"></script>
-      <script src="js/imagesloaded.pkgd.min.js"></script>
       <script src="js/confetti.js"></script>
       <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
       <script src="js/main.js"></script>
