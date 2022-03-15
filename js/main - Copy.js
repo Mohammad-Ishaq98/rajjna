@@ -16,7 +16,7 @@
 		zoomWindowWidth: 350,
 	});
 	$("#zoom_03").elevateZoom({
-		zoomWindowPosition: 3,
+		zoomWindowPosition: 10,
 		zoomWindowWidth: 350,
 	});
 	$("#zoom_04").elevateZoom({
@@ -37,16 +37,22 @@
 const mainWrapper = document.querySelector("#main_wrapper");
 const sellItem = document.querySelector("#sell_item");
 const backToMain = document.querySelector("#back_to_main");
-const detailsBtn = document.querySelector("#details");
+//const detailsBtn = document.querySelector(".details");
+let idBtn = document.querySelectorAll('#btn-one, #btn-two, #btn-three');
 
-detailsBtn.addEventListener("click", function () {
-	mainWrapper.classList.add('none');
-	sellItem.classList.remove('none')
-})
-backToMain.addEventListener('click', function () {
-	mainWrapper.classList.remove('none');
-	sellItem.classList.add('none')
-})
+for (var i = 0; i < idBtn.length; i++) {
+	idBtn[i] = function () {
+		idBtn.addEventListener("click", function () {
+			mainWrapper.classList.add('none');
+			sellItem.classList.remove('none')
+		})
+		idBtn.addEventListener('click', function () {
+			mainWrapper.classList.remove('none');
+			sellItem.classList.add('none')
+		})
+	};
+}
+
 
 
 //**************************** add to cart section ****************************
@@ -99,6 +105,7 @@ function addToCartClicked(event) {
 	let shopItem = button.parentElement;
 	let title = shopItem.getElementsByClassName('product_name')[0].innerText;
 	let price = shopItem.getElementsByClassName('product_price')[0].innerText;
+	//let total = price;
 	addItemToCart(title, price);
 	updateCartTotal()
 }
@@ -116,13 +123,13 @@ function addItemToCart(title, price) {
 									<span class="cart-price cart-column">${price}</span>
 								</div>
 								<div class="col-2">
-									<p class="total">T-1 </p>
-								</div>
-								<div class="col-4 cart-quantity cart-column">
-									<input style="width: 70%;" class="cart-quantity-input" type="number" value="1">
-									<button class="btn btn-danger" type="button">X</button>
-								</div>
-							`;
+									<p class="total"></p>
+								</div >
+		<div class="col-4 cart-quantity cart-column">
+			<input style="width: 70%;" class="cart-quantity-input" type="number" value="1">
+				<button class="btn btn-danger" type="button">X</button>
+		</div>
+	`;
 	cartRow.innerHTML = cartRowContents;
 	cartItems.append(cartRow)
 	cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem);
@@ -135,17 +142,19 @@ function updateCartTotal() {
 	const cartRows = cartItemsContainer.getElementsByClassName('cart-row');
 	console.log(cartRows);
 	let grandTotal = 0;
+	let total = 0;
 	for (let i = 0; i < cartRows.length; i++) {
 		const cartRow = cartRows[i];
 		const priceElement = cartRow.getElementsByClassName('cart-price')[0];
 		const quantiyElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
-		//const total = cartRow.getElementsByClassName('total')[0];
-		const price = parseFloat(priceElement.innerText.replace('$', ''));
+		const total = cartRow.getElementsByClassName('total')[0];
+		const price = parseFloat(priceElement.innerText.replace('৳', ''));
 		const quantity = quantiyElement.value;
 		//calculating total & grandtotal
+		//total = price * quantity
 		grandTotal = grandTotal + (price * quantity);
 	}
-	document.getElementsByClassName('cart-total-price')[0].innerText = '$' + grandTotal;
+	document.getElementsByClassName('cart-total-price')[0].innerText = grandTotal + '৳';
 }
 
 
