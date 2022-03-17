@@ -4,7 +4,7 @@
 	// meanmenu
 	$('#mobile-menu').meanmenu({
 		meanMenuContainer: '.mobile-menu',
-		meanScreenWidth: "992"
+		meanScreenWidth: "991"
 	});
 
 	// elavety zoom
@@ -31,6 +31,12 @@
 		zoomWindowWidth: 350,
 	});
 
+	//scroll Down
+	$(".down").click(function () {
+		$('html, body').animate({
+			scrollTop: $(".up").offset().top
+		}, 1500);
+	});
 	// WOW active
 	//new WOW().init();
 })(jQuery);

@@ -7,22 +7,147 @@
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
-
+  
 }
 
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
-
+  .section_bangladeshi {
+    padding: 30px 0;
+  }
+  .section_bangladeshi .single_clothe_section {
+    position: static;
+    overflow: visible;
+  }
+  .section_bangladeshi .single_clothe_section .hover_section {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    -o-transform: translate(0%, 0%);
+  }
+  .section_bangladeshi .single_clothe_section .hover_section .add_cart, .section_bangladeshi .single_clothe_section .hover_section .details {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .section_bangladeshi .single_clothe_section::before {
+    position: static;
+  }
+  .mean-container a.meanmenu-reveal {
+    border: none;
+    top: -19px;
+  }
+  .mean-container a.meanmenu-reveal span {
+    background: #fff none repeat scroll 0 0;
+    height: 4px;
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+  .mean-container a.meanmenu-reveal {
+    color: #fff;
+    font-size: 25px;
+  }
+  .mean-container .mean-nav {
+    background: #fff none repeat scroll 0 0;
+    margin-top: 5px;
+  }
+  .mean-container .mean-nav ul li a {
+    text-align: center;
+    color: #000;
+  }
 }
 
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+  .hero .hero_txt h1, .hero .hero_txt h3 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    z-index: 9999;
+  }
+  img{
+    height: 300px;
+  }
+  .section_bangladeshi {
+    padding: 30px 0;
+  }
+  .section_bangladeshi .single_clothe_section::before {
+    position: static;
+  }
+  .section_bangladeshi .single_clothe_section {
+    position: static;
+    overflow: visible;
+  }
+  .section_bangladeshi .single_clothe_section .hover_section {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    -o-transform: translate(0%, 0%);
+  }
+  .section_bangladeshi .single_clothe_section .hover_section .add_cart, .section_bangladeshi .single_clothe_section .hover_section .details {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .details_img img {
+    height: 300px;
+    width: 100%;
+  }
 
- 
+  #sell_item #back_to_main {
+    position: fixed;
+    width: 15%;
+    box-shadow: 0px 6px 26px 0 #30252554;
+    z-index: 200;
+    top: 28%;
+    right: 0;
+    border: none;
+    opacity: 1;
+    background: #ff94bc;
+    padding: 10px;
+    color: #fff;
+    border-radius: 15px;
+  }
+  .mean-container a.meanmenu-reveal {
+    border: none;
+    top: -19px;
+  }
+  .mean-container a.meanmenu-reveal span {
+    background: #fff none repeat scroll 0 0;
+    height: 4px;
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+  .mean-container a.meanmenu-reveal {
+    color: #fff;
+    font-size: 25px;
+  }
+  .mean-container .mean-nav {
+    background: #fff none repeat scroll 0 0;
+    margin-top: 5px;
+  }
+  .mean-container .mean-nav ul li a {
+    text-align: center;
+    color: #000;
+  }
+  .section_bangladeshi .single_clothe_section img {
+    height: 369px;
+  }
+  .btn.btn-danger {
+    padding: 2px 4px;
+    font-size: 11px;
+  }
 }
  
 /* Large Mobile :480px. */

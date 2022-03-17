@@ -10,7 +10,10 @@
    <!-- CSS here -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/meanmenu.css">
+   <link rel="stylesheet" href="css/fontawesome-all.min.css">
+   <link rel="stylesheet" href="css/all.min.css">
    <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -18,12 +21,12 @@
    <header class="header">
       <div class="container">
          <div class="row align-content-center">
-            <div class="col-lg-3">
+            <div class="col-md-3">
                <div class="logo">
                   <a href="#index.html">Rajjan</a>
                </div>
             </div>
-            <div class="col-lg-9">
+            <div class="col-md-9">
                <div class="main_menu_wrapper d-flex justify-content-center">
                   <nav id="mobile-menu" class="main_menu">
                      <ul>
@@ -75,12 +78,13 @@
                   </header>
                   <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                      <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        <button class="btn btn-primary mb-5" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
                            type="button" role="tab" aria-controls="home" aria-selected="true">Cotton</button>
                      </li>
                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                           type="button" role="tab" aria-controls="profile" aria-selected="false">Chiffon</button>
+                        <button class="ms-1 btn btn-info" id=" profile-tab" data-bs-toggle="tab"
+                           data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                           aria-selected="false">Chiffon</button>
                      </li>
                   </ul>
                </div>
@@ -89,7 +93,7 @@
             <div class="tab-content" id="myTabContent">
                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                   <div class="row">
-                     <div class="col-lg-4">
+                     <div class="col-md-4">
                         <div class="single_clothe_section">
                            <img id="" class="" src="img/sample.jpg" data-zoom-image="img/sample.jpg" />
                            <div class="hover_section">
@@ -97,7 +101,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-lg-4">
+                     <div class="col-md-4">
                         <div class="single_clothe_section">
                            <img id="" src="img/sample-2.jpg" alt="" class="">
                            <div class="hover_section">
@@ -105,7 +109,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-lg-4">
+                     <div class="col-md-4">
                         <div class="single_clothe_section">
                            <img id="" src="img/sample-3.jpg" alt="" class="">
                            <div class="hover_section">
@@ -118,7 +122,7 @@
                <!-- chiffon  -->
                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                   <div class="row">
-                     <div class="col-lg-4">
+                     <div class="col-md-4">
                         <div class="single_clothe_section">
                            <img src="img/sample-4.jpg" alt="" class="">
                            <div class="hover_section">
@@ -127,7 +131,7 @@
                         </div>
 
                      </div>
-                     <div class="col-lg-4">
+                     <div class="col-md-4">
                         <div class="single_clothe_section">
                            <img src="img/sample-5.jpg" alt="" class="">
                            <div class="hover_section">
@@ -135,7 +139,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-lg-4">
+                     <div class="col-md-4">
                         <div class="single_clothe_section">
                            <img src="img/sample-6.jpg" alt="" class="">
                            <div class="hover_section">
@@ -153,60 +157,67 @@
    <section class="details none" id="sell_item">
       <div class="container">
          <div class="row">
-            <div class="col-lg-3">
-               <button id="back_to_main" href="">Back to main Page</button>
+            <div class="col-md-3">
+               <button id="back_to_main">Back to main Page</button>
+               <button id="back_to_cart"><i class="fa-solid fa-cart-shopping"></i></button>
             </div>
          </div>
          <!-- bagladeshi cotton item start -->
          <div id="one" class="row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-md-6">
                <div class="details_img">
                   <img id="zoom_01" class="img-fluid" src="img/sample.jpg" />
                </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                <div class="details_txt">
                   <h2>Bangladeshi 3 pieces</h2>
                   <h6 class="product_name">stylish 3 piece</h6>
-                  <span class="product_price">200</span>
-                  <p>Dummy Texts: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in fugit ducimus
-                     consequuntur ut, magnam nam officiis possimus perferendis rem delectus rerum id, ea nulla corporis
+                  <span class="product_price">200 <span>Taka</span></span>
+                  <p>Dummy Texts: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in fugit
+                     ducimus
+                     consequuntur ut, magnam nam officiis possimus perferendis rem delectus rerum id, ea nulla
+                     corporis
                      nobis magni? Exercitationem, corrupti.</p>
                   <button class="add_cart btn btn-outline-primary">Add to Cart</button>
                </div>
             </div>
          </div>
          <div id="two" class=" row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-md-6">
                <div class="details_img">
                   <img id="zoom_02" class="img-fluid" src="img/sample-2.jpg" />
                </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                <div class="details_txt">
                   <h2>Bangladeshi 3 pieces</h2>
                   <h6 class="product_name">Tangaili 3 piece</h6>
-                  <span class="product_price">2000</span>
-                  <p>Dummy Texts: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in fugit ducimus
-                     consequuntur ut, magnam nam officiis possimus perferendis rem delectus rerum id, ea nulla corporis
+                  <span class="product_price">2020 <span>Taka</span></span>
+                  <p>Dummy Texts: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in fugit
+                     ducimus
+                     consequuntur ut, magnam nam officiis possimus perferendis rem delectus rerum id, ea nulla
+                     corporis
                      nobis magni? Exercitationem, corrupti.</p>
                   <button class="add_cart btn btn-outline-primary">Add to Cart</button>
                </div>
             </div>
          </div>
          <div id="three" class="row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-md-6">
                <div class="details_img">
                   <img id="zoom_03" class="img-fluid" src="img/sample-3.jpg" />
                </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                <div class="details_txt">
                   <h2>Bangladeshi 3 pieces</h2>
                   <h6 class="product_name">Jessor 3 piece</h6>
-                  <span class="product_price">1000</span>
-                  <p>Dummy Texts: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in fugit ducimus
-                     consequuntur ut, magnam nam officiis possimus perferendis rem delectus rerum id, ea nulla corporis
+                  <span class="product_price">581 <span>Taka</span></span>
+                  <p>Dummy Texts: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in fugit
+                     ducimus
+                     consequuntur ut, magnam nam officiis possimus perferendis rem delectus rerum id, ea nulla
+                     corporis
                      nobis magni? Exercitationem, corrupti.</p>
                   <button class="add_cart btn btn-outline-primary">Add to Cart</button>
                </div>
@@ -216,54 +227,60 @@
 
          <!-- bagladeshi chiffon item start -->
          <div id="four" class="row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-md-6">
                <div class="details_img">
                   <img id="zoom_04" class="img-fluid" src="img/sample-4.jpg" />
                </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                <div class="details_txt">
                   <h2>Bangladeshi 3 pieces</h2>
                   <h6 class="product_name">stylish 3 piece</h6>
-                  <span class="product_price">200</span>
-                  <p>Dummy Texts: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in fugit ducimus
-                     consequuntur ut, magnam nam officiis possimus perferendis rem delectus rerum id, ea nulla corporis
+                  <span class="product_price">1200 <span>Taka</span></span>
+                  <p>Dummy Texts: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in fugit
+                     ducimus
+                     consequuntur ut, magnam nam officiis possimus perferendis rem delectus rerum id, ea nulla
+                     corporis
                      nobis magni? Exercitationem, corrupti.</p>
                   <button class="add_cart btn btn-outline-primary">Add to Cart</button>
                </div>
             </div>
          </div>
          <div id="five" class=" row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-md-6">
                <div class="details_img">
                   <img id="zoom_05" class="img-fluid" src="img/sample-5.jpg" />
                </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                <div class="details_txt">
                   <h2>Bangladeshi 3 pieces</h2>
                   <h6 class="product_name">Tangaili 3 piece</h6>
-                  <span class="product_price">2000</span>
-                  <p>Dummy Texts: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in fugit ducimus
-                     consequuntur ut, magnam nam officiis possimus perferendis rem delectus rerum id, ea nulla corporis
+                  <span class="product_price">2055 <span>Taka</span></span>
+                  <p>Dummy Texts: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in fugit
+                     ducimus
+                     consequuntur ut, magnam nam officiis possimus perferendis rem delectus rerum id, ea nulla
+                     corporis
                      nobis magni? Exercitationem, corrupti.</p>
                   <button class="add_cart btn btn-outline-primary">Add to Cart</button>
                </div>
             </div>
          </div>
          <div id="six" class="row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-md-6">
                <div class="details_img">
                   <img id="zoom_06" class="img-fluid" src="img/sample-6.jpg" />
                </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                <div class="details_txt">
                   <h2>Bangladeshi 3 pieces</h2>
                   <h6 class="product_name">Jessor 3 piece</h6>
-                  <span class="product_price">1000</span>
-                  <p>Dummy Texts: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in fugit ducimus
-                     consequuntur ut, magnam nam officiis possimus perferendis rem delectus rerum id, ea nulla corporis
+                  <span class="product_price">600 <span>Taka</span></span>
+                  <p>Dummy Texts: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in fugit
+                     ducimus
+                     consequuntur ut, magnam nam officiis possimus perferendis rem delectus rerum id, ea nulla
+                     corporis
                      nobis magni? Exercitationem, corrupti.</p>
                   <button class="add_cart btn btn-outline-primary">Add to Cart</button>
                </div>
@@ -276,11 +293,11 @@
 
 
    <!-- cart/form start-->
-   <form action="" method="post">
+   <form action="" method="post" id="footer_cart">
       <div class="container">
          <div class="row">
             <div class="col-lg-12">
-               <h2 class="section-header">CART</h2>
+               <h2 class="section-header text-center">CART</h2>
                <div class="row cart-row">
                   <span class="col-4 cart-item cart-header cart-column">ITEM</span>
                   <span class="col-2 cart-price cart-header cart-column">PRICE</span>
