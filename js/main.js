@@ -27,7 +27,7 @@
 		zoomWindowWidth: 350,
 	});
 	$("#zoom_06").elevateZoom({
-		zoomWindowPosition: 10,
+		zoomWindowPosition: 3,
 		zoomWindowWidth: 350,
 	});
 
@@ -37,16 +37,42 @@
 const mainWrapper = document.querySelector("#main_wrapper");
 const sellItem = document.querySelector("#sell_item");
 const backToMain = document.querySelector("#back_to_main");
-const detailsBtn = document.querySelector("#details");
+const kamizDetaisBtn_01 = document.querySelector("#kamiz_01");
+const kamizDetaisBtn_02 = document.querySelector("#kamiz_02");
+const kamizDetaisBtn_03 = document.querySelector("#kamiz_03");
+const kamizDetaisBtn_04 = document.querySelector("#kamiz_04");
+const kamizDetaisBtn_05 = document.querySelector("#kamiz_05");
+const kamizDetaisBtn_06 = document.querySelector("#kamiz_06");
 
-detailsBtn.addEventListener("click", function () {
+
+kamizDetaisBtn_01.addEventListener("click", function () {
+	kamizFunction()
+})
+kamizDetaisBtn_02.addEventListener("click", function () {
+	kamizFunction()
+})
+kamizDetaisBtn_03.addEventListener("click", function () {
+	kamizFunction()
+})
+kamizDetaisBtn_04.addEventListener("click", function () {
+	kamizFunction()
+})
+kamizDetaisBtn_05.addEventListener("click", function () {
+	kamizFunction()
+})
+kamizDetaisBtn_06.addEventListener("click", function () {
+	kamizFunction()
+})
+function kamizFunction() {
 	mainWrapper.classList.add('none');
 	sellItem.classList.remove('none')
-})
+}
+
 backToMain.addEventListener('click', function () {
 	mainWrapper.classList.remove('none');
 	sellItem.classList.add('none')
 })
+
 
 
 //**************************** add to cart section ****************************
@@ -80,6 +106,7 @@ function purchaseClicked() {
 	}
 	updateCartTotal()
 }
+
 
 function removeCartItem(event) {
 	const buttonClicked = event.target;
@@ -115,9 +142,7 @@ function addItemToCart(title, price) {
 								<div class="col-2">
 									<span class="cart-price cart-column">${price}</span>
 								</div>
-								<div class="col-2">
-									<p class="total">T-1 </p>
-								</div>
+								
 								<div class="col-4 cart-quantity cart-column">
 									<input style="width: 70%;" class="cart-quantity-input" type="number" value="1">
 									<button class="btn btn-danger" type="button">X</button>
