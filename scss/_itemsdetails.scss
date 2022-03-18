@@ -1,5 +1,6 @@
 #sell_item{
   background: #ffcffa2b;
+  position: relative;
   .row{
     margin-bottom: 30px;
   }
@@ -34,16 +35,22 @@
     }
   }
   #back_to_cart{
-    width: 15%;
+    width: 50px;
     box-shadow: 0px 6px 26px 0 #30252554;
     right: 0;
     border: none;
-    opacity: .4;
-    background: #ff94bc;
+    opacity: 1;
+    background: #1a1a1a;
     padding: 10px;
     color: #fff;
-    border-radius: 15px;
-  }
-  img{
-  }
+    border-radius: 50%;
+    height: 50px;
+    line-height: 15px;
+    position: fixed;
+    right: 0;
+    top: 90%;
+    }
+     i{
+       font-size: 25px;
+     } 
 }

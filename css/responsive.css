@@ -104,20 +104,20 @@
     height: 300px;
     width: 100%;
   }
-
   #sell_item #back_to_main {
     position: fixed;
-    width: 15%;
+    width: 16%;
     box-shadow: 0px 6px 26px 0 #30252554;
     z-index: 200;
-    top: 28%;
-    right: 0;
+    top: 16%;
+    left: 0%;
     border: none;
     opacity: 1;
     background: #ff94bc;
-    padding: 10px;
+    padding: 6px;
     color: #fff;
     border-radius: 15px;
+    font-size: 10px;
   }
   .mean-container a.meanmenu-reveal {
     border: none;

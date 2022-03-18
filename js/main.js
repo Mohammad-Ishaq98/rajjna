@@ -40,6 +40,7 @@
 	// WOW active
 	//new WOW().init();
 })(jQuery);
+const dateOfYear = document.querySelector("#date").innerText
 const mainWrapper = document.querySelector("#main_wrapper");
 const sellItem = document.querySelector("#sell_item");
 const backToMain = document.querySelector("#back_to_main");
@@ -49,6 +50,8 @@ const kamizDetaisBtn_03 = document.querySelector("#kamiz_03");
 const kamizDetaisBtn_04 = document.querySelector("#kamiz_04");
 const kamizDetaisBtn_05 = document.querySelector("#kamiz_05");
 const kamizDetaisBtn_06 = document.querySelector("#kamiz_06");
+
+//date
 
 
 kamizDetaisBtn_01.addEventListener("click", function () {

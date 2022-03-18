@@ -11,7 +11,8 @@
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/meanmenu.css">
    <link rel="stylesheet" href="css/fontawesome-all.min.css">
-   <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -78,11 +79,12 @@
                   </header>
                   <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                      <li class="nav-item" role="presentation">
-                        <button class="btn btn-primary mb-5" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                           type="button" role="tab" aria-controls="home" aria-selected="true">Cotton</button>
+                        <button class="btn btn-outline-primary mb-5" id="home-tab" data-bs-toggle="tab"
+                           data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                           aria-selected="true">Cotton</button>
                      </li>
                      <li class="nav-item" role="presentation">
-                        <button class="ms-1 btn btn-info" id=" profile-tab" data-bs-toggle="tab"
+                        <button class="ms-1 btn btn-outline-info" id=" profile-tab" data-bs-toggle="tab"
                            data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
                            aria-selected="false">Chiffon</button>
                      </li>
@@ -159,7 +161,9 @@
          <div class="row">
             <div class="col-md-3">
                <button id="back_to_main">Back to main Page</button>
-               <button id="back_to_cart"><i class="fa-solid fa-cart-shopping"></i></button>
+               <a href="#footer_cart" id="back_to_cart" class=""><i class="fa fa-cart-arrow-down"
+                     aria-hidden="true"></i>
+               </a>
             </div>
          </div>
          <!-- bagladeshi cotton item start -->
@@ -317,6 +321,18 @@
       </div>
       </div>
    </form>
+   <footer>
+      <div class="container">
+         <div class="row">
+            <div class="col-12 text-start">
+               <div class="footer_txt">
+                  <p>&copy; <span id="date"></span> ALl RIGHTS RESERVED RAJJAN CLOTHING</p>
+                  <p>Created & maintenance by <a href="https://www.linkedin.com/in/md-ishaq-ibrahim-368b07224/">Ishaq</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
    <!-- cart/form end-->
    <!-- header end -->
    <!-- JS here -->
@@ -324,6 +340,7 @@
    <script src="js/vendor/jquery-1.12.4.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/jquery.meanmenu.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>
    <script src="js/confetti.js"></script>
    <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
    <script src="js/main.js"></script>
